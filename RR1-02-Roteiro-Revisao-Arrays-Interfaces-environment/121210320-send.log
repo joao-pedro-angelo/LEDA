@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-03-22T08:48:38.979-0300</date>
+  <logger>JOAO PEDRO CARNEIRO DOS SANTOS ANGELO</logger>
+  <level>FINE</level>
+  <message>File 121210320-JOAO PEDRO CARNEIRO DOS SANTOS ANGELO.zip was received. It was sent by JOAO PEDRO CARNEIRO DOS SANTOS ANGELO from IP 150.165.42.170 at 22-03-2023 08*48*38</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-03-22T08:53:55.112-0300</date>
+  <logger>JOAO PEDRO CARNEIRO DOS SANTOS ANGELO</logger>
+  <level>FINE</level>
+  <message>File 121210320-JOAO PEDRO CARNEIRO DOS SANTOS ANGELO.zip was received. It was sent by JOAO PEDRO CARNEIRO DOS SANTOS ANGELO from IP 150.165.42.170 at 22-03-2023 08*53*55</message>
+</record>
