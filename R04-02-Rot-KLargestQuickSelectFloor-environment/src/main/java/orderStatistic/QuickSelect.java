@@ -44,11 +44,12 @@ public class QuickSelect<T extends Comparable<T>> {
 	 *
 	 */
 	public T quickSelect(T[] array, int k) {
+		T result = null;
 		if (array != null && array.length > 0 && k <= array.length && k >= 1) {
-			return array[quickSelectRecursivo(array, k, 0, array.length - 1)];
+			result = array[quickSelectRecursivo(array, k, 0, array.length - 1)];
 		}
 		
-		return null;
+		return result;
 	} 
 	
 	private int quickSelectRecursivo(T[] array, int k, int left, int right) {
