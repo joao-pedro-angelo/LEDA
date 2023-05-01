@@ -9,7 +9,7 @@ import orderStatistic.QuickSelect;
 
 class QuickSelectTeste {
 
-	private QuickSelect<Integer> implementacao;
+    private QuickSelect<Integer> implementacao;
     private Integer[] array;
     
     @BeforeEach
