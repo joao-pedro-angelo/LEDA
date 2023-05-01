@@ -15,7 +15,7 @@ class FloorBinarySearchTest {
 	 
 	 @BeforeEach
 	 public void setUp() {
-		 this.implementacao = new FloorBinarySearchImpl();
+	     this.implementacao = new FloorBinarySearchImpl();
 	     this.array = new Integer[] { -3, 18, 4, 15, 11, 40, 45, 21, 13, 12 };
 	     this.arrayVazio = new Integer[] {};
 	 }
