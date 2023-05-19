@@ -4,6 +4,7 @@ public class LinkedListIMPL<T extends Comparable<T>> implements LinkedListMerge<
     
 	public SingleLinkedListNode<T> merge(SingleLinkedListNode<T> node1, SingleLinkedListNode<T> node2){
 		
+		
 		SingleLinkedListNode<T> encadeamento = new SingleLinkedListNode<T>();
 		SingleLinkedListNode<T> firstNode = new SingleLinkedListNode<T>();
 		
@@ -12,91 +13,80 @@ public class LinkedListIMPL<T extends Comparable<T>> implements LinkedListMerge<
 		}
 		else if (node1.isNIL()) {
 			firstNode.setData(node2.getData());
-			node2 = node2.next;
+			node2 = node2.getNext();
 		}
 		else if (node2.isNIL()) {
 			firstNode.setData(node1.getData());
-			node1 = node1.next;
+			node1 = node1.getNext();
 		}
 		else if (node1.getData().compareTo(node2.getData()) <= 0) {
 			firstNode.setData(node1.getData());
-			node1 = node1.next;
+			node1 = node1.getNext();
 		}
 		else {
 			firstNode.setData(node2.getData());
-			node2 = node2.next;
+			node2 = node2.getNext();
 		}
 		
 		firstNode.setNext(encadeamento);
 		
-		while (node1 != null && node2 != null && !node1.isNIL() && !node2.isNIL()) {
-			
+		while (!node1.isNIL() && !node2.isNIL()) {
 			if (node1.getData().compareTo(node2.getData()) <= 0) {
 				encadeamento.setData(node1.getData());
-				if (node1.next != null) {
-					node1 = node1.next;
-				}
-				else {
-					node1.setNext(new SingleLinkedListNode<T>());
-				}
+				node1 = node1.getNext();
 			}
 			else {
 				encadeamento.setData(node2.getData());
-				if (node2.next != null) {
-					node2 = node2.next;
-				}
-				else {
-					node2.setNext(new SingleLinkedListNode<T>());
-				}
+				node2 = node2.getNext();
 			}
 			
 			encadeamento.setNext(new SingleLinkedListNode<T>());
 			encadeamento = encadeamento.getNext();
 		}
-    
-		while (node1.getData() != null) {
+		
+		while (!node1.isNIL()) {
 			encadeamento.setData(node1.getData());
-			node1 = node1.next;
-			
-			if (node1.getData() != null && node1.next != null) {
+			if ((node1.getNext() != null)) {
 				encadeamento.setNext(new SingleLinkedListNode<T>());
 				encadeamento = encadeamento.getNext();
 			}
+			node1 = node1.getNext();
 		}
 		
-		while (node2.getData() != null) {
+		while (!node2.isNIL()) {
 			encadeamento.setData(node2.getData());
-			node2 = node2.next;
-			
-			if (node2.getData() != null && node2.next != null) {
+			if ((node2.getNext() != null)) {
 				encadeamento.setNext(new SingleLinkedListNode<T>());
 				encadeamento = encadeamento.getNext();
 			}
+			node2 = node2.getNext();
 		}
 		
 		return firstNode;
 	}
 	
 	public static void main(String[] args) {
-		SingleLinkedListNode<Integer> l1 = new SingleLinkedListNode<>();
-		SingleLinkedListNode<Integer> l2 = new SingleLinkedListNode<>();
-		
-		l1.add(1);
-		l1.add(3);
-		l1.add(5);
-		
-		l2.add(2);
-		l2.add(4);
-		l2.add(6);
-		
 		LinkedListIMPL<Integer> teste = new LinkedListIMPL<>();
 		
-		SingleLinkedListNode<Integer> result = teste.merge(l1, l2);
-		System.out.println("RETORNO: " + result.getData());
-		while (result != null && !result.isNIL()) {
-			System.out.println(result.getData());
-			result = result.next;
+		SingleLinkedListNode<Integer> node1 = new SingleLinkedListNode<>();
+		node1.add(1);
+		node1.add(3);
+		node1.add(5);
+		
+		SingleLinkedListNode<Integer> node2 = new SingleLinkedListNode<>();
+		node2.add(2);
+		node2.add(4);
+		node2.add(6);
+		
+		SingleLinkedListNode<Integer> nodeResult = teste.merge(node1, node2);
+		
+		System.out.println("RETORNO: " + nodeResult.getData());
+		
+		while (nodeResult != null && !nodeResult.isNIL()) {
+			System.out.println(nodeResult.getData());
+			nodeResult = nodeResult.getNext();
 		}
+		
 	}
 	
 }
