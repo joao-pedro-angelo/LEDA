@@ -1,5 +1,3 @@
-package estudosLeda;
-
 public class MergeSingleLinkedList<T extends Comparable<T>>{
     
 	public SingleLinkedListNode<T> merge(SingleLinkedListNode<T> node1, SingleLinkedListNode<T> node2){
