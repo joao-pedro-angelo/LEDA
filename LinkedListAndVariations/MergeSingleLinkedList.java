@@ -1,6 +1,6 @@
 package estudosLeda;
 
-public class LinkedListIMPL<T extends Comparable<T>> implements LinkedListMerge<T>{
+public class MergeSingleLinkedList<T extends Comparable<T>>{
     
 	public SingleLinkedListNode<T> merge(SingleLinkedListNode<T> node1, SingleLinkedListNode<T> node2){
 		
@@ -66,7 +66,7 @@ public class LinkedListIMPL<T extends Comparable<T>> implements LinkedListMerge<
 	}
 	
 	public static void main(String[] args) {
-		LinkedListIMPL<Integer> teste = new LinkedListIMPL<>();
+		MergeSingleLinkedList<Integer> teste = new MergeSingleLinkedList<>();
 		
 		SingleLinkedListNode<Integer> node1 = new SingleLinkedListNode<>();
 		node1.add(1);
