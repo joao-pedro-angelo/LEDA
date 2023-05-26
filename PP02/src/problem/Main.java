@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Solucao<Integer> teste = new Solucao<>();
+		MySolution<Integer> teste = new MySolution<>();
 		SingleLinkedListNode<Integer> node1 = new SingleLinkedListNode<>();
 		SingleLinkedListNode<Integer> node2 = new SingleLinkedListNode<>();
 		SingleLinkedListNode<Integer> node3 = new SingleLinkedListNode<>();
