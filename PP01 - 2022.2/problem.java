@@ -1,7 +1,7 @@
 /**
 4    * Dado um array A ordenado de inteiros de tamanho N e um valor x, possivelmente com mais de uma ocorrencia,
 5    * usar busca binária para encontrar as posicoes da primeira e ultima ocorrencias de x em  A.
-6    *
+6    
 7    * Exemplo:
 8    *   A = [5, 7, 7, 8, 8, 10]
 9    *   x = 8
