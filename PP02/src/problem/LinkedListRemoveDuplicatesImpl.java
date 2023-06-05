@@ -28,8 +28,7 @@ public class LinkedListRemoveDuplicatesImpl<T> implements LinkedListRemoveDuplic
     			   }
     		   }
     		   node = node.getNext();
-    	   }
-    	   
+    	   }   
        }
     }
 }
