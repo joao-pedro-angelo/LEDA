@@ -1,3 +1,5 @@
+// Observação: consegui nota 10 com essa solução. É a prova do segundo estágio do período 2022.2
+
 package problems;
 
 import adt.linkedList.SingleLinkedListNode;
