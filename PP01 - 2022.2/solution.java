@@ -1,4 +1,6 @@
  /**
+       Observação: Consegui nota 10 com essa solução, foi a prova do primeiro estágio do período 2022.2
+ 
 4    * Dado um array A ordenado de inteiros de tamanho N e um valor x, possivelmente com mais de uma ocorrencia,
 5    * usar busca binária para encontrar as posicoes da primeira e ultima ocorrencias de x em  A.
 6   
