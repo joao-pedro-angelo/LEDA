@@ -1,3 +1,10 @@
+//Solução avaliada com nota: 97/100
+//Para a nota máxima, o método público deveria apenas retornar a invocação do método privado:
+
+//  public int sumLeaves(BST<Integer> bst){ 
+//      return sumLeaves((BSTNode<Integer>) bst.getRoot());
+//  }
+
 package problems;
 2   
 3   import adt.bst.BST;
